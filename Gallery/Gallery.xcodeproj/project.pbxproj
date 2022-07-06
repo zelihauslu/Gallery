@@ -15,6 +15,7 @@
 		DDC16D3628758AC100894413 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D3528758AC100894413 /* ImagePicker.swift */; };
 		DDC16D3828758AF700894413 /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D3728758AF700894413 /* ZoomableScrollView.swift */; };
 		DDC16D3A28758BCF00894413 /* My-Images-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDC16D3928758BCF00894413 /* My-Images-Info.plist */; };
+		DDC16D3C287593B700894413 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D3B287593B700894413 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DDC16D3528758AC100894413 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DDC16D3728758AF700894413 /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 		DDC16D3928758BCF00894413 /* My-Images-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "My-Images-Info.plist"; sourceTree = "<group>"; };
+		DDC16D3B287593B700894413 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +62,15 @@
 			isa = PBXGroup;
 			children = (
 				DDC16D3928758BCF00894413 /* My-Images-Info.plist */,
+				DDC16D22287588A800894413 /* ContentView.swift */,
+				DDC16D20287588A800894413 /* GalleryApp.swift */,
+				DDC16D24287588A900894413 /* Assets.xcassets */,
 				DDC16D32287589E000894413 /* Extensions */,
-				DDC16D31287589CC00894413 /* UIViewRepresentables */,
 				DDC16D30287589BD00894413 /* Models */,
+				DDC16D26287588A900894413 /* Preview Content */,
+				DDC16D31287589CC00894413 /* UIViewRepresentables */,
 				DDC16D2F287589AD00894413 /* ViewModels */,
 				DDC16D2E287589A500894413 /* Views */,
-				DDC16D20287588A800894413 /* GalleryApp.swift */,
-				DDC16D22287588A800894413 /* ContentView.swift */,
-				DDC16D24287588A900894413 /* Assets.xcassets */,
-				DDC16D26287588A900894413 /* Preview Content */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -91,6 +93,7 @@
 		DDC16D2F287589AD00894413 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DDC16D3B287593B700894413 /* ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				DDC16D23287588A800894413 /* ContentView.swift in Sources */,
 				DDC16D3628758AC100894413 /* ImagePicker.swift in Sources */,
 				DDC16D21287588A800894413 /* GalleryApp.swift in Sources */,
+				DDC16D3C287593B700894413 /* ViewModel.swift in Sources */,
 				DDC16D34287589FF00894413 /* FileManager+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
