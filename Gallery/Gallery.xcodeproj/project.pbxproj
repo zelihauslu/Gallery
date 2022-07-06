@@ -13,6 +13,7 @@
 		DDC16D28287588A900894413 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC16D27287588A900894413 /* Preview Assets.xcassets */; };
 		DDC16D34287589FF00894413 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D33287589FF00894413 /* FileManager+Extension.swift */; };
 		DDC16D3628758AC100894413 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D3528758AC100894413 /* ImagePicker.swift */; };
+		DDC16D3828758AF700894413 /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D3728758AF700894413 /* ZoomableScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		DDC16D27287588A900894413 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDC16D33287589FF00894413 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		DDC16D3528758AC100894413 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DDC16D3728758AF700894413 /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				DDC16D3528758AC100894413 /* ImagePicker.swift */,
+				DDC16D3728758AF700894413 /* ZoomableScrollView.swift */,
 			);
 			path = UIViewRepresentables;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC16D3828758AF700894413 /* ZoomableScrollView.swift in Sources */,
 				DDC16D23287588A800894413 /* ContentView.swift in Sources */,
 				DDC16D3628758AC100894413 /* ImagePicker.swift in Sources */,
 				DDC16D21287588A800894413 /* GalleryApp.swift in Sources */,
