@@ -8,47 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var vm : ViewModel
+    @EnvironmentObject var vm: ViewModel
     var body: some View {
         NavigationView {
-            VStack{
-                if let image = vm.image{
+            VStack {
+                if let image = vm.image {
                     ZoomableScrollView {
                         Image(uiImage: image)
                             .resizable()
                             .scaledToFit()
-                        .frame(width: 0, height: .infinity)
+                        .frame(minWidth: 0, maxWidth: .infinity)
                     }
-                } else{
+                } else {
                     Image(systemName: "photo.fill")
                         .resizable()
                         .scaledToFit()
                         .opacity(0.6)
-                        .frame(width: 0, height: .infinity)
+                        .frame(minWidth: 0, maxWidth: .infinity)
                         .padding(.horizontal)
                 }
                 HStack {
-                    Button(action: {
+                    Button {
                         vm.source = .camera
                         vm.showPhotoPicker()
-                    }, label: {
+                    } label: {
                         Text("Camera")
-                    })
-                    
-                    Button(action: {
+                    }
+                    Button {
                         vm.source = .library
                         vm.showPhotoPicker()
-                    }, label: {
-                        Text("Gallery")
-                    })
+                    } label: {
+                        Text("Photos")
+                    }
                 }
                 Spacer()
             }
-            .sheet(isPresented: $vm.showPicker){
+            .sheet(isPresented: $vm.showPicker) {
                 ImagePicker(sourceType: vm.source == .library ? .photoLibrary : .camera, selectedImage: $vm.image)
                     .ignoresSafeArea()
             }
-            .navigationTitle("My Image")
+            .alert("Error", isPresented: $vm.showCameraAlert, presenting: vm.cameraError, actions: { cameraError in
+                cameraError.button
+            }, message: { cameraError in
+                Text(cameraError.message)
+            })
+            .navigationTitle("My Images")
         }
     }
 }

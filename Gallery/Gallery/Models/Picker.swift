@@ -5,11 +5,11 @@
 //  Created by Zeliha Uslu on 6.07.2022.
 //
 
-import UIKit
+import SwiftUI
 import AVFoundation
 
 enum Picker {
-    enum Source: String{
+    enum Source: String {
         case library, camera
     }
     
@@ -45,3 +45,12 @@ enum Picker {
             throw PickerError.unavailable
         }
     }
+    
+    struct CameraErrorType {
+        let error: Picker.PickerError
+        var message: String {
+            error.localizedDescription
+        }
+        let button = Button("OK", role: .cancel) {}
+    }
+}
