@@ -13,6 +13,9 @@ struct GalleryApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(ViewModel())
+                .onAppear {
+                    UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+                }
         }
     }
 }
