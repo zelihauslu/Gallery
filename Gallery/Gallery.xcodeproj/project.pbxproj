@@ -11,6 +11,7 @@
 		DDC16D23287588A800894413 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D22287588A800894413 /* ContentView.swift */; };
 		DDC16D25287588A900894413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC16D24287588A900894413 /* Assets.xcassets */; };
 		DDC16D28287588A900894413 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC16D27287588A900894413 /* Preview Assets.xcassets */; };
+		DDC16D34287589FF00894413 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC16D33287589FF00894413 /* FileManager+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DDC16D22287588A800894413 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DDC16D24287588A900894413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC16D27287588A900894413 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDC16D33287589FF00894413 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,11 @@
 		DDC16D1F287588A800894413 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				DDC16D32287589E000894413 /* Extensions */,
+				DDC16D31287589CC00894413 /* UIViewRepresentables */,
+				DDC16D30287589BD00894413 /* Models */,
+				DDC16D2F287589AD00894413 /* ViewModels */,
+				DDC16D2E287589A500894413 /* Views */,
 				DDC16D20287588A800894413 /* GalleryApp.swift */,
 				DDC16D22287588A800894413 /* ContentView.swift */,
 				DDC16D24287588A900894413 /* Assets.xcassets */,
@@ -65,6 +72,42 @@
 				DDC16D27287588A900894413 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDC16D2E287589A500894413 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDC16D2F287589AD00894413 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DDC16D30287589BD00894413 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDC16D31287589CC00894413 /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIViewRepresentables;
+			sourceTree = "<group>";
+		};
+		DDC16D32287589E000894413 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DDC16D33287589FF00894413 /* FileManager+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			files = (
 				DDC16D23287588A800894413 /* ContentView.swift in Sources */,
 				DDC16D21287588A800894413 /* GalleryApp.swift in Sources */,
+				DDC16D34287589FF00894413 /* FileManager+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
