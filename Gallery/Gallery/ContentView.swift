@@ -13,10 +13,12 @@ struct ContentView: View {
         NavigationView {
             VStack{
                 if let image = vm.image{
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFit()
+                    ZoomableScrollView {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
                         .frame(width: 0, height: .infinity)
+                    }
                 } else{
                     Image(systemName: "photo.fill")
                         .resizable()
